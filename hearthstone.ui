@@ -1,0 +1,2835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HearthstoneClass</class>
+ <widget class="QWidget" name="HearthstoneClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1500</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1500</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1500</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Hearthstone</string>
+  </property>
+  <widget class="QLabel" name="logo">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>LOGO.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="start">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>800</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Start</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="done">
+   <property name="geometry">
+    <rect>
+     <x>1218</x>
+     <y>265</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Done</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="chooseInfo1">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>460</y>
+     <width>700</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="chooseInfo0">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>10</y>
+     <width>700</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="prompt0">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>10</y>
+     <width>500</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Click a card to replace it with a new one</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="gameInfo1">
+   <property name="geometry">
+    <rect>
+     <x>235</x>
+     <y>690</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TEXT HERE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="gameInfo3">
+   <property name="geometry">
+    <rect>
+     <x>345</x>
+     <y>690</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TEXT HERE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="gameInfo0">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>690</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TEXT HERE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="gameInfo2">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>690</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TEXT HERE</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="finish">
+   <property name="geometry">
+    <rect>
+     <x>1375</x>
+     <y>840</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Finish</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="prompt1">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>10</y>
+     <width>300</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>TEXT HERE</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cardView">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>80</y>
+     <width>240</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;To view cards detail:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Press Keys &amp;quot;0&amp;quot;~“9”&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;To view skills, weapons &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;and minions detail: &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Press Keys &amp;quot;Q&amp;quot;~“O”&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;and &amp;quot;A&amp;quot;~&amp;quot;L&amp;quot;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="textFormat">
+    <enum>Qt::AutoText</enum>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="history">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>435</y>
+     <width>500</width>
+     <height>250</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>13</pointsize>
+    </font>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseBtn5">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>540</y>
+     <width>240</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseBtn6">
+   <property name="geometry">
+    <rect>
+     <x>1148</x>
+     <y>540</y>
+     <width>240</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseBtn3">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>540</y>
+     <width>240</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseBtn1">
+   <property name="geometry">
+    <rect>
+     <x>452</x>
+     <y>90</y>
+     <width>240</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseBtn2">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>90</y>
+     <width>240</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseBtn4">
+   <property name="geometry">
+    <rect>
+     <x>452</x>
+     <y>540</y>
+     <width>240</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseBtn0">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>90</y>
+     <width>240</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cardBtn2">
+   <property name="geometry">
+    <rect>
+     <x>285</x>
+     <y>720</y>
+     <width>120</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cardBtn0">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>720</y>
+     <width>120</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cardBtn1">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>720</y>
+     <width>120</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cardBtn5">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>720</y>
+     <width>120</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cardBtn3">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>720</y>
+     <width>120</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cardBtn4">
+   <property name="geometry">
+    <rect>
+     <x>555</x>
+     <y>720</y>
+     <width>120</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cardBtn6">
+   <property name="geometry">
+    <rect>
+     <x>825</x>
+     <y>720</y>
+     <width>120</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cardBtn7">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>720</y>
+     <width>120</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cardBtn8">
+   <property name="geometry">
+    <rect>
+     <x>1095</x>
+     <y>720</y>
+     <width>120</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cardBtn9">
+   <property name="geometry">
+    <rect>
+     <x>1230</x>
+     <y>720</y>
+     <width>120</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>120</width>
+     <height>171</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkMinion0">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>270</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkMinion1">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>270</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkMinion2">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>270</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkMinion3">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>270</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkMinion4">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>270</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkMinion5">
+   <property name="geometry">
+    <rect>
+     <x>1200</x>
+     <y>270</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkMinion6">
+   <property name="geometry">
+    <rect>
+     <x>1320</x>
+     <y>270</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightMinion0">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>390</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightMinion1">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>390</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightMinion2">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>390</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightMinion3">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>390</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightMinion4">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>390</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightMinion5">
+   <property name="geometry">
+    <rect>
+     <x>1200</x>
+     <y>390</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightMinion6">
+   <property name="geometry">
+    <rect>
+     <x>1320</x>
+     <y>390</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightPlace0">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>390</y>
+     <width>20</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightPlace1">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>390</y>
+     <width>20</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightPlace2">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>390</y>
+     <width>20</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightPlace3">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>390</y>
+     <width>20</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightPlace4">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>390</y>
+     <width>20</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightPlace5">
+   <property name="geometry">
+    <rect>
+     <x>1170</x>
+     <y>390</y>
+     <width>20</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightPlace6">
+   <property name="geometry">
+    <rect>
+     <x>1290</x>
+     <y>390</y>
+     <width>20</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightPlace7">
+   <property name="geometry">
+    <rect>
+     <x>1410</x>
+     <y>390</y>
+     <width>20</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkPlace1">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>270</y>
+     <width>20</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkPlace7">
+   <property name="geometry">
+    <rect>
+     <x>1410</x>
+     <y>270</y>
+     <width>20</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkPlace2">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>270</y>
+     <width>20</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkPlace4">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>270</y>
+     <width>20</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkPlace5">
+   <property name="geometry">
+    <rect>
+     <x>1170</x>
+     <y>270</y>
+     <width>20</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkPlace3">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>270</y>
+     <width>20</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkPlace0">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>270</y>
+     <width>20</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkPlace6">
+   <property name="geometry">
+    <rect>
+     <x>1290</x>
+     <y>270</y>
+     <width>20</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightSkill">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>550</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkSkill">
+   <property name="geometry">
+    <rect>
+     <x>1050</x>
+     <y>110</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionA0">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>470</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionA1">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>470</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionA2">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>470</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionA3">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>470</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionA4">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>470</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionA5">
+   <property name="geometry">
+    <rect>
+     <x>1200</x>
+     <y>470</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionA6">
+   <property name="geometry">
+    <rect>
+     <x>1320</x>
+     <y>470</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionH0">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>470</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionH1">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>470</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionH4">
+   <property name="geometry">
+    <rect>
+     <x>1120</x>
+     <y>470</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionH2">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>470</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionH3">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>470</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionH5">
+   <property name="geometry">
+    <rect>
+     <x>1240</x>
+     <y>470</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionH6">
+   <property name="geometry">
+    <rect>
+     <x>1360</x>
+     <y>470</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionH3">
+   <property name="geometry">
+    <rect>
+     <x>1000</x>
+     <y>250</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionA0">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>250</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionH2">
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>250</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionA4">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>250</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionH0">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>250</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionA5">
+   <property name="geometry">
+    <rect>
+     <x>1200</x>
+     <y>250</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionH4">
+   <property name="geometry">
+    <rect>
+     <x>1120</x>
+     <y>250</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionA1">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>250</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionH1">
+   <property name="geometry">
+    <rect>
+     <x>760</x>
+     <y>250</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionA2">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>250</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionA3">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>250</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionH6">
+   <property name="geometry">
+    <rect>
+     <x>1360</x>
+     <y>250</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionH5">
+   <property name="geometry">
+    <rect>
+     <x>1240</x>
+     <y>250</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionA6">
+   <property name="geometry">
+    <rect>
+     <x>1320</x>
+     <y>250</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionI6">
+   <property name="geometry">
+    <rect>
+     <x>1320</x>
+     <y>210</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionI1">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>210</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionI5">
+   <property name="geometry">
+    <rect>
+     <x>1200</x>
+     <y>210</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionI3">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>210</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionI2">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>210</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionI0">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>210</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkMinionI4">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>210</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionI0">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>490</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionI1">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>490</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionI5">
+   <property name="geometry">
+    <rect>
+     <x>1200</x>
+     <y>490</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionI6">
+   <property name="geometry">
+    <rect>
+     <x>1320</x>
+     <y>490</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionI2">
+   <property name="geometry">
+    <rect>
+     <x>840</x>
+     <y>490</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionI3">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>490</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightMinionI4">
+   <property name="geometry">
+    <rect>
+     <x>1080</x>
+     <y>490</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightHeroA">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>630</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightHeroH">
+   <property name="geometry">
+    <rect>
+     <x>995</x>
+     <y>630</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkHeroA">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>90</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkHeroH">
+   <property name="geometry">
+    <rect>
+     <x>995</x>
+     <y>90</y>
+     <width>50</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightWeaponA">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>630</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightWeaponH">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>630</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkWeaponA">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>90</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkWeaponH">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>90</y>
+     <width>40</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkSubFrame">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>80</y>
+     <width>240</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>Dark League's Subwindow</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightSubFrame">
+   <property name="geometry">
+    <rect>
+     <x>275</x>
+     <y>261</y>
+     <width>240</width>
+     <height>160</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string>Light League's Subwindow</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignHCenter|Qt::AlignTop</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkChoice0">
+   <property name="geometry">
+    <rect>
+     <x>285</x>
+     <y>130</y>
+     <width>220</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Choice 1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkChoice1">
+   <property name="geometry">
+    <rect>
+     <x>285</x>
+     <y>180</y>
+     <width>220</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Choice 2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightChoice1">
+   <property name="geometry">
+    <rect>
+     <x>285</x>
+     <y>361</y>
+     <width>220</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Choice 2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightChoice0">
+   <property name="geometry">
+    <rect>
+     <x>285</x>
+     <y>311</y>
+     <width>220</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Choice 1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="prompt2">
+   <property name="geometry">
+    <rect>
+     <x>950</x>
+     <y>10</y>
+     <width>500</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="quit">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>800</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="quitMessage">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>300</y>
+     <width>500</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>30</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mana0">
+   <property name="geometry">
+    <rect>
+     <x>455</x>
+     <y>690</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mana1">
+   <property name="geometry">
+    <rect>
+     <x>495</x>
+     <y>690</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mana2">
+   <property name="geometry">
+    <rect>
+     <x>535</x>
+     <y>690</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mana3">
+   <property name="geometry">
+    <rect>
+     <x>575</x>
+     <y>690</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mana4">
+   <property name="geometry">
+    <rect>
+     <x>615</x>
+     <y>690</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mana5">
+   <property name="geometry">
+    <rect>
+     <x>655</x>
+     <y>690</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mana6">
+   <property name="geometry">
+    <rect>
+     <x>695</x>
+     <y>690</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mana7">
+   <property name="geometry">
+    <rect>
+     <x>735</x>
+     <y>690</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mana8">
+   <property name="geometry">
+    <rect>
+     <x>775</x>
+     <y>690</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="mana9">
+   <property name="geometry">
+    <rect>
+     <x>815</x>
+     <y>690</y>
+     <width>25</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancel">
+   <property name="geometry">
+    <rect>
+     <x>1375</x>
+     <y>790</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightWeapon">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>550</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkWeapon">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>110</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="darkHero">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>110</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="lightHero">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>550</y>
+     <width>80</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkHeroI">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>70</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightHeroI">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>650</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseBtn0r">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>90</y>
+     <width>240</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>replace.png</normaloff>replace.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>160</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseBtn4r">
+   <property name="geometry">
+    <rect>
+     <x>452</x>
+     <y>540</y>
+     <width>240</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>replace.png</normaloff>replace.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>160</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseBtn3r">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>540</y>
+     <width>240</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>replace.png</normaloff>replace.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>160</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseBtn1r">
+   <property name="geometry">
+    <rect>
+     <x>452</x>
+     <y>90</y>
+     <width>240</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>replace.png</normaloff>replace.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>160</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseBtn5r">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>540</y>
+     <width>240</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>replace.png</normaloff>replace.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>160</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseBtn6r">
+   <property name="geometry">
+    <rect>
+     <x>1148</x>
+     <y>540</y>
+     <width>240</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>replace.png</normaloff>replace.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>160</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="chooseBtn2r">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>90</y>
+     <width>240</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>240</width>
+     <height>341</height>
+    </size>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>replace.png</normaloff>replace.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>160</width>
+     <height>160</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cardMana">
+   <property name="geometry">
+    <rect>
+     <x>27</x>
+     <y>98</y>
+     <width>49</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>20</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cardAttack">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>366</y>
+     <width>49</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>20</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cardHealth">
+   <property name="geometry">
+    <rect>
+     <x>204</x>
+     <y>366</y>
+     <width>49</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="cardSkill">
+   <property name="geometry">
+    <rect>
+     <x>112</x>
+     <y>90</y>
+     <width>49</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>20</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>20</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="place">
+   <property name="geometry">
+    <rect>
+     <x>1375</x>
+     <y>740</y>
+     <width>100</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Place</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lightWeaponI">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>650</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="darkWeaponI">
+   <property name="geometry">
+    <rect>
+     <x>870</x>
+     <y>70</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Text</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>chooseBtn2r</zorder>
+  <zorder>chooseBtn5r</zorder>
+  <zorder>history</zorder>
+  <zorder>logo</zorder>
+  <zorder>chooseBtn1</zorder>
+  <zorder>chooseBtn2</zorder>
+  <zorder>chooseBtn0</zorder>
+  <zorder>chooseBtn5</zorder>
+  <zorder>chooseBtn3</zorder>
+  <zorder>chooseBtn6</zorder>
+  <zorder>chooseBtn4</zorder>
+  <zorder>quit</zorder>
+  <zorder>quitMessage</zorder>
+  <zorder>cardBtn2</zorder>
+  <zorder>cardBtn0</zorder>
+  <zorder>cardBtn1</zorder>
+  <zorder>cardBtn5</zorder>
+  <zorder>cardBtn3</zorder>
+  <zorder>cardBtn4</zorder>
+  <zorder>cardBtn6</zorder>
+  <zorder>cardBtn7</zorder>
+  <zorder>cardBtn8</zorder>
+  <zorder>cardBtn9</zorder>
+  <zorder>done</zorder>
+  <zorder>chooseInfo1</zorder>
+  <zorder>chooseInfo0</zorder>
+  <zorder>prompt0</zorder>
+  <zorder>gameInfo1</zorder>
+  <zorder>gameInfo3</zorder>
+  <zorder>gameInfo0</zorder>
+  <zorder>gameInfo2</zorder>
+  <zorder>prompt1</zorder>
+  <zorder>start</zorder>
+  <zorder>finish</zorder>
+  <zorder>darkMinion0</zorder>
+  <zorder>darkMinion1</zorder>
+  <zorder>darkMinion2</zorder>
+  <zorder>darkMinion3</zorder>
+  <zorder>darkMinion4</zorder>
+  <zorder>darkMinion5</zorder>
+  <zorder>darkMinion6</zorder>
+  <zorder>lightMinion0</zorder>
+  <zorder>lightMinion1</zorder>
+  <zorder>lightMinion2</zorder>
+  <zorder>lightMinion3</zorder>
+  <zorder>lightMinion4</zorder>
+  <zorder>lightMinion5</zorder>
+  <zorder>lightMinion6</zorder>
+  <zorder>lightPlace0</zorder>
+  <zorder>lightPlace1</zorder>
+  <zorder>lightPlace2</zorder>
+  <zorder>lightPlace3</zorder>
+  <zorder>lightPlace4</zorder>
+  <zorder>lightPlace5</zorder>
+  <zorder>lightPlace6</zorder>
+  <zorder>lightPlace7</zorder>
+  <zorder>darkPlace1</zorder>
+  <zorder>darkPlace7</zorder>
+  <zorder>darkPlace2</zorder>
+  <zorder>darkPlace4</zorder>
+  <zorder>darkPlace5</zorder>
+  <zorder>darkPlace3</zorder>
+  <zorder>darkPlace0</zorder>
+  <zorder>darkPlace6</zorder>
+  <zorder>lightSkill</zorder>
+  <zorder>darkSkill</zorder>
+  <zorder>lightMinionA0</zorder>
+  <zorder>lightMinionA1</zorder>
+  <zorder>lightMinionA2</zorder>
+  <zorder>lightMinionA3</zorder>
+  <zorder>lightMinionA4</zorder>
+  <zorder>lightMinionA5</zorder>
+  <zorder>lightMinionA6</zorder>
+  <zorder>lightMinionH0</zorder>
+  <zorder>lightMinionH1</zorder>
+  <zorder>lightMinionH4</zorder>
+  <zorder>lightMinionH2</zorder>
+  <zorder>lightMinionH3</zorder>
+  <zorder>lightMinionH5</zorder>
+  <zorder>lightMinionH6</zorder>
+  <zorder>darkMinionH3</zorder>
+  <zorder>darkMinionA0</zorder>
+  <zorder>darkMinionH2</zorder>
+  <zorder>darkMinionA4</zorder>
+  <zorder>darkMinionH0</zorder>
+  <zorder>darkMinionA5</zorder>
+  <zorder>darkMinionH4</zorder>
+  <zorder>darkMinionA1</zorder>
+  <zorder>darkMinionH1</zorder>
+  <zorder>darkMinionA2</zorder>
+  <zorder>darkMinionA3</zorder>
+  <zorder>darkMinionH6</zorder>
+  <zorder>darkMinionH5</zorder>
+  <zorder>darkMinionA6</zorder>
+  <zorder>darkMinionI6</zorder>
+  <zorder>darkMinionI1</zorder>
+  <zorder>darkMinionI5</zorder>
+  <zorder>darkMinionI3</zorder>
+  <zorder>darkMinionI2</zorder>
+  <zorder>darkMinionI0</zorder>
+  <zorder>darkMinionI4</zorder>
+  <zorder>lightMinionI0</zorder>
+  <zorder>lightMinionI1</zorder>
+  <zorder>lightMinionI5</zorder>
+  <zorder>lightMinionI6</zorder>
+  <zorder>lightMinionI2</zorder>
+  <zorder>lightMinionI3</zorder>
+  <zorder>lightMinionI4</zorder>
+  <zorder>lightHeroA</zorder>
+  <zorder>lightHeroH</zorder>
+  <zorder>darkHeroA</zorder>
+  <zorder>darkHeroH</zorder>
+  <zorder>lightWeaponA</zorder>
+  <zorder>lightWeaponH</zorder>
+  <zorder>darkWeaponA</zorder>
+  <zorder>darkWeaponH</zorder>
+  <zorder>darkSubFrame</zorder>
+  <zorder>lightSubFrame</zorder>
+  <zorder>darkChoice0</zorder>
+  <zorder>darkChoice1</zorder>
+  <zorder>lightChoice1</zorder>
+  <zorder>lightChoice0</zorder>
+  <zorder>prompt2</zorder>
+  <zorder>mana0</zorder>
+  <zorder>mana1</zorder>
+  <zorder>mana2</zorder>
+  <zorder>mana3</zorder>
+  <zorder>mana4</zorder>
+  <zorder>mana5</zorder>
+  <zorder>mana6</zorder>
+  <zorder>mana7</zorder>
+  <zorder>mana8</zorder>
+  <zorder>mana9</zorder>
+  <zorder>cancel</zorder>
+  <zorder>lightWeapon</zorder>
+  <zorder>darkWeapon</zorder>
+  <zorder>darkHero</zorder>
+  <zorder>lightHero</zorder>
+  <zorder>darkHeroI</zorder>
+  <zorder>lightHeroI</zorder>
+  <zorder>chooseBtn0r</zorder>
+  <zorder>chooseBtn4r</zorder>
+  <zorder>chooseBtn3r</zorder>
+  <zorder>chooseBtn1r</zorder>
+  <zorder>chooseBtn6r</zorder>
+  <zorder>cardView</zorder>
+  <zorder>cardMana</zorder>
+  <zorder>cardAttack</zorder>
+  <zorder>cardHealth</zorder>
+  <zorder>cardSkill</zorder>
+  <zorder>place</zorder>
+  <zorder>lightWeaponI</zorder>
+  <zorder>darkWeaponI</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="hearthstone.qrc"/>
+ </resources>
+ <connections/>
+</ui>
